@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* /............................................................ */
+
+
+
+/* https://aun-herbalbackend-production.up.railway.app/api/products */
+
+
+.main-img{
+  margin: 15px;
+margin-top: -100px;
+
+}
+.new-change{
+  margin-top: -25px;
+ 
+    position: relative;
+  }
+  
+
+.new-change div img{
+  width: 100%;
+  height: 520px;
+}
+/* ................................... */
+
+
+
+.textover {
+  position: absolute;
+  top: 35%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: green; /* Adjust text color as needed */
+  text-align: center;
+}
+
+/* .textover h1{
+  font-size: 45px;
+  font-weight: 900;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* fontFamily: Poppins, sans-serif;
+} */ 
+
+
+.textover h1 {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+}
+.textover h3{
+  font-size: 25px;
+  padding: 2px 140px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.textover p{
+  
+  text-align: center;
+  padding: 2px 240px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.textover h1,
+.textover h3 {
+  margin: 10px;
+}
+
+
+
+
+
+/* .......................... */
+
+.knowmore{
+    margin: 15px;
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: row;
+}
+.know1{
+    width: "15%";
+     height: "auto";
+}
+
+.knowmore img{
+    margin: 15px;
+    width: "25%";
+     height: "auto";
+
+}
+.who
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.we{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.us{
+  margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-indent: 0;
+    
+}
+.aunherbal {
+  display: flex;
+  gap: 15px;
+}
+.knowbtn{
+    background-color: rgb(1, 29, 1);
+    color: whitesmoke;
+    
+    border-radius: 20px;
+    font-size: 18px;
+  padding: 10px;
+  
+    
+    margin-top: 20px;
+
+}
+.knowbtn:hover{
+    background-color: green;
+}
+
+@media only screen and (max-width: 1030px){
+  .textover h1 {
+    font-size: 38px;
+    font-weight: 850;
+    font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+  }
+
+  .textover h3{
+    font-size: 28px;
+    padding: 2px 110px;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  .textover p{
+  
+    text-align: center;
+    padding: 2px 200px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+}
+
+
+@media only screen and (max-width: 910px) {
+  .new-change div img{
+    width: 100%;
+    height: 420px;
+  }
+  .main-img{
+    margin: 15px;
+  margin-top: -50px;
+  
+  }
+  .textover h1 {
+    font-size: 35px;
+    
+    font-weight: 850;
+    font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+  }
+  .textover p{
+  
+    text-align: center;
+    padding: 2px 160px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+  .textover h3{
+    font-size: 24px;
+    padding: 2px 60px;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  .knowmore {
+    flex-direction: column; /* Change flex-direction to column on smaller screens */
+  }
+
+}
+
+@media only screen and (max-width: 838px) {
+.textover h1 {
+  font-size: 32px;
+  font-weight: 850;
+  font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+}
+
+.textover h3{
+  font-size: 22px;
+  padding: 2px 50px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.textover p{
+  
+  text-align: center;
+  padding: 2px 150px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+
+}
+}
+
+/* Media Queries for responsive layout */
+@media only screen and (max-width: 768px) {
+    .knowmore {
+      flex-direction: column; /* Change flex-direction to column on smaller screens */
+    }
+    .aunherbal{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .knowe1{
+        width: "45%" !important;
+         height: "auto" !important;
+    }
+    .knowmore img {
+      margin: 15px 0; /* Adjust margin for smaller screens */
+    }
+  
+    .us {
+      font-size: 16px; /* Decrease font size for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 710px) {
+    .textover {
+      position: absolute;
+      top: 38%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: green; /* Adjust text color as needed */
+      text-align: center;
+    }
+    .new-change div img{
+      width: 100%;
+      height: 360px;
+    }
+    .main-img{
+      margin: 15px;
+    margin-top: -50px;
+    
+    }
+    .textover h1 {
+      font-size: 26px;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+    }
+    
+    .textover h3{
+      font-size: 20px;
+      padding: 2px 35px;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    .textover p{
+  
+      text-align: center;
+      padding: 2px 100px;
+      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+    
+    }
+    }
+
+    @media only screen and (max-width: 595px) {
+      .textover {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        color: green; /* Adjust text color as needed */
+        text-align: center;
+      }
+      .new-change div img{
+        width: 100%;
+        height: 250px;
+      }
+      .main-img{
+        margin: 10px;
+      margin-top: -30px;
+      
+      }
+      .textover h1 {
+        font-size: 25px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+      }
+      
+      .textover h3{
+        margin-top: -10px;
+        font-size: 16px;
+        padding: 2px 30px;
+        font-family: 'Poppins', sans-serif;
+        
+      }
+      .textover p{
+  
+        text-align: center;
+        padding: 2px 70px;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+      
+      }
+      }
+
+
+      @media only screen and (max-width: 555px) {
+        .textover {
+          position: absolute;
+          top: 45%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+          color: green; /* Adjust text color as needed */
+          text-align: center;
+        }
+        .new-change div img{
+          width: 100%;
+          height: 240px;
+        }
+        .main-img{
+          margin: 10px;
+        margin-top: -30px;
+        
+        }
+        .textover h1 {
+          font-size: 25px;
+          font-weight: 800;
+          font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+        }
+        
+        .textover h3{
+          font-size: 16px;
+          padding: 2px 30px;
+          font-family: 'Poppins', sans-serif;
+          
+        }
+        .textover p{
+  
+          text-align: center;
+          padding: 2px 40px;
+          font-size: 08px;
+          font-family: 'Poppins', sans-serif;
+        
+        }
+        }
+  
+  
+
+
+      @media only screen and (max-width: 495px) {
+        .new-change div img{
+          width: 100%;
+          height: 210px;
+        }
+        .main-img{
+          margin: 10px;
+        margin-top: -30px;
+        
+        }
+        .textover h1 {
+          font-size: 22px;
+          font-weight: 800;
+          font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+        }
+        
+        .textover h3{
+          font-size: 13px;
+          padding: 2px 30px;
+          font-family: 'Poppins', sans-serif;
+          
+        }
+        }
+  @media only screen and (max-width: 480px) {
+    .main-img {
+      margin-top: -30px; /* Further adjust margin for smaller screens */
+    }
+  
+    .knowmore {
+      margin: 10px; /* Reduce margin for smaller screens */
+    }
+    .knowmore1{
+        width: "45%" !important;
+         height: "auto" !important;
+    }
+  
+    
+  }
+
+
+  @media only screen and (max-width: 435px) {
+    .new-change div img{
+      width: 100%;
+      height: 190px;
+    }
+    .main-img{
+      margin: 5px;
+    margin-top: -20px;
+    
+    }
+    .textover h1 {
+      font-size: 19px;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+    }
+    
+    .textover h3{
+      font-size: 13px;
+      padding: 2px 30px;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+  }
+
+  @media only screen and (max-width: 385px) {
+    .new-change div img{
+      width: 100%;
+      height: 190px;
+    }
+    .main-img{
+      margin: 5px;
+    margin-top: -20px;
+    
+    }
+    .textover h1 {
+      font-size: 17px;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif; /* Correctly set the font-family */
+    }
+    
+    .textover h3{
+      font-size: 11px;
+      padding: 2px 30px;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+  }

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+.logo img{
+    width: 70px;
+
+}
+.logo{
+    /* margin-top: -20px; */
+    margin-bottom: 10px;
+}
+
+#navbar {
+    background-color : rgb(23, 81, 23);
+    color: white;
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1000;
+    
+}
+
+#navbar > div {
+    display: flex;
+    font-size: 26px;
+    gap: 50px; /* Reduced the gap between components */
+    margin-bottom: -20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-login{
+    margin-top: 15px;
+    margin-bottom: -5px;
+    margin-right: 20px;
+
+}
+#navbar .hamburger {
+    margin-left: 5px;
+    display: none;
+}
+
+#navbar .mobilebag {
+    display: none;
+}
+
+
+@media only screen and (max-width: 20000px) {
+    #navbar .hamburger {
+        display: block;
+    }
+    #navbar{
+        position: relative;
+        z-index: 100000;
+    }
+    .nav-login{
+        margin-top: 15px;
+        margin-bottom: -5px;
+        margin-right: 20px;
+    
+    }
+    .bar{
+        font-size: 26px;
+    }
+    .functions {
+        display: none !important;
+    }
+    #navbar .mobilebag {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navlinks {
+        font-size: 45px;
+        position: fixed;  
+        left: -1000%;
+        top: 80px;
+        gap: 0px;
+font-size: 26px;
+        flex-direction: column;
+        background-color:  rgb(23, 81, 23);
+        color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+    .navlinks.active {
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #navbar .hamburger {
+        display: block;
+    }
+    #navbar .mobilebag {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navlinks {
+        font-size: 45px;
+        position: fixed;  
+        left: -1000%;
+        top: 80px;
+        gap: 0px;
+        font-size: 26px;
+        flex-direction: column;
+        background-color:  rgb(23, 81, 23);
+        color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+    .navlinks.active {
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    #navbar > div {
+        display: flex;
+        font-size: 26px;
+        gap: 5px; /* Reduced the gap between components */
+        margin-bottom: -20px;
+        
+    }
+    #navbar a {
+        text-decoration: none;
+        color: white;
+    text-align: left important!;
+    }
+    
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  @media only screen and (min-width: 1001px) {
+    #navbar .hamburger {
+        display: none;
+    }
+    #navbar .mobilebag {
+        display: none;
+    }
+    .navlinks {
+        font-size: 26px;
+        position: relative;
+        left: auto;
+        top: auto;
+        gap: 10px;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        text-align: left;
+        transition: none;
+    }
+    .navlinks.active {
+        left: auto;
+    }
+
+  }
+  .link-menu{
+    position: relative;
+    transition: background-color 1.9s ease;
+  }

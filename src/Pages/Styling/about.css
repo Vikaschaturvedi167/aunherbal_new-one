@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+#main-about{
+    background-color: whitesmoke;
+width: 100%;
+}
+
+
+.background-img {
+  margin-top: -30px;
+  position: relative; /* Make the parent container relative */
+  
+}
+
+.background-img video {
+
+  
+ width: 90px;
+ 
+}
+
+.text-overlay {
+  position: absolute; /* Position the overlay relative to the parent container */
+  top: 40%; /* Place the overlay at the vertical center of the parent container */
+  left: 10px; /* Place the overlay 10px from the right edge of the parent container */
+  transform: translateY(-50%); /* Adjust the vertical position to center the text */
+  font-size: 29px;
+  text-align: justify;
+  padding: 20px; /* Add padding to the overlay */
+  color: white; /* Text color */
+  width: 65%; /* Limit the width of the overlay */
+
+  box-sizing: border-box; /* Include padding and border in the overlay's total width */
+}
+
+.text-overlay p span{
+  font-size: 40px;
+  color: rgb(240, 175, 56);
+}
+
+
+
+.hype{
+    inline-size: 39%;
+    overflow-wrap: break-word;
+  hyphens: manual;
+  text-align: justify;
+  text-indent: 0; 
+}
+
+ 
+  
+.hype p {
+    
+    border: 2px solid white;
+    font-family: Inconsolata;
+    font-weight: 400;
+    color: black;
+    font-size: 27px;
+    height: auto;
+
+    margin-top: -40px; /* Adjust margin-top as needed */
+    margin-bottom: -1px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify; /* Center align the text */
+    text-indent: 0; /* Ensure each line starts from the same point */
+    /* inline-size: 150px; */
+
+  }
+
+  .about-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  margin: 40px;
+    width: 80%;
+
+  }
+
+  .about-product img{
+    width: 30%;
+    margin-right: 100px;
+    margin: 20px;
+  }
+
+  .about-product p{
+    text-align: center;
+  text-align: justify;
+  width: 65%;
+  font-size: 24px;
+  border: 1px solid whitesmoke;
+  }
+
+  .maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps iframe {
+    
+    background-color: rgb(224, 224, 223);
+    width: 90%;
+       height: 420px;
+       margin: 10px;
+    border: 10px solid rgb(231, 229, 229);
+  
+  }
+.video1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin: 50px;
+  width: 90%;
+}
+.video1 video{
+  width: 50%;
+}
+
+
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    
+  
+    
+  
+    .back-skin-img {
+      max-height: 300px; /* Adjust max height for smaller screens */
+    }
+  }
+
+/* For screens larger than iPhone 12 viewport */
+@media only screen and (max-width: 1035px) {
+  .background-img img {
+    height: 500px; /* Default background image height for larger screens */
+  }
+  .text-overlay {
+    max-width: 80%; /* Default text overlay width for larger screens */
+    font-size: 18px; /* Default font size for larger screens */
+  }
+  .about-product p{
+    text-align: center;
+  text-align: justify;
+  width: 75%;
+  font-size: 22px;
+  border: 1px solid whitesmoke;
+  }
+}
+  @media only screen and (max-width: 768px) {
+    .background-img img {
+      height: 500px; /* Default backgound image height for larger screens */
+    }
+  
+
+    .text-overlay {
+      max-width: 80%; /* Default text overlay width for larger screens */
+      font-size: 12px; /* Default font size for larger screens */
+    }
+    .text-overlay p span{
+      font-size: 30px;
+      color: rgb(240, 175, 56);
+    }
+    
+    .about-product{
+      width: 90%;
+    gap: 80px;
+    }
+    .about-product p{
+      text-align: center;
+    text-align: justify;
+    width: 90%;
+    font-size: 18px;
+    border: 1px solid whitesmoke;
+    }
+    .maps iframe {
+    
+      background-color: rgb(224, 224, 223);
+      width: 90%;
+         height: 420px;
+         margin: 10px;
+      border: 10px solid rgb(231, 229, 229);
+    
+    }
+  }
+
+  @media only screen and (min-width: 458px) and (max-width: 700px) {
+    .background-img img {
+        height: 500px; /* Default backgound image height for larger screens */
+      }
+    
+      .text-overlay {
+        max-width: 80%; /* Default text overlay width for larger screens */
+        font-size: 11px; /* Default font size for larger screens */
+      }
+  }
+  @media only screen and (max-width: 558px){
+    .text-overlay p span{
+      font-size: 25px;
+      color: rgb(240, 175, 56);
+    }
+    
+    .about-product{
+      width: 90%;
+    gap: 60px;
+    }
+    .about-product p{
+      text-align: center;
+    text-align: justify;
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid whitesmoke;
+    }
+    .video1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      margin: 20px;
+      width: 80%;
+    }
+    .maps iframe {
+    
+      background-color: rgb(224, 224, 223);
+      width: 80%;
+         height: 420px;
+         margin: 10px;
+      border: 10px solid rgb(231, 229, 229);
+    
+    }
+    .video1 video{
+      width: 80%;
+    }
+  }
+
+
+  @media only screen and (max-width: 458px){
+    .background-img img {
+        height: 500px; /* Default backgound image height for larger screens */
+      }
+      .text-overlay {
+
+        max-width: 80%; /* Default text overlay width for larger screens */
+        font-size: 7px; /* Default font size for larger screens */
+      }
+      .text-overlay p span{
+        font-size: 22px;
+        color: rgb(240, 175, 56);
+      }
+      
+      .about-product{
+        width: 90%;
+      gap: 40px;
+      }
+      .about-product p{
+        text-align: center;
+      text-align: justify;
+      width: 80%;
+      font-size: 11px;
+      border: 1px solid whitesmoke;
+      }
+  
+    }
+
+    @media only screen and (max-width: 380px){
+
+      .about-product p{
+        text-align: center;
+      text-align: justify;
+      width: 80%;
+      font-size: 9px;
+      border: 1px solid whitesmoke;
+      margin-right: 30px;
+      }
+  
+    }

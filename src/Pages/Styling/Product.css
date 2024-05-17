@@ -1,0 +1,244 @@
+/* Product.css */
+.main-box {
+  
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.product-container {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px;
+ 
+  margin-bottom: 30px;
+}
+.filter-container {
+  margin: 30px;
+  gap: 20px;
+}
+.search-input {
+  width: auto;
+  padding: 10px;
+  font-size: 18px;
+}
+.sort-select {
+  width: auto;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(157, 155, 155);
+}
+
+.product-card {
+  width: calc(80% - 40px); /* Full width with margin */
+  margin-bottom: 30px;
+  border: 1px solid white; /* Add border to create cards */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.product-card {
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+}
+
+.product-image {
+  width: 30%;
+  height: auto;
+}
+
+.product-details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+#add-to-cart-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#add-to-cart-btn:hover {
+  background-color: rgb(72, 234, 72);
+}
+.vid-main {
+  display: flex;
+  width: 40%; /* Make the video fill the container width */
+  height: 900%;
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.vid-main video {
+  width: 100%;
+  height: auto;
+}
+.video1 {
+  width: 100%; /* Make the video fill the container width */
+  height: auto;
+}
+
+
+
+/* Media Queries for responsive layout */
+@media only screen and (max-width: 1200px) {
+  .product-card {
+    width: 100%; /* Two cards per row */
+  }
+  .filter-container {
+    align-items: center;
+  }
+  .product-description{
+    padding: 10px;
+    text-align: justify;
+  
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .vid-main{
+    width: 90%;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .video1{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 100%; /* Single card per row */
+    padding: 10px;
+  }
+  .product-details{
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+  
+    flex-direction: column;
+    text-align: justify;
+
+  }
+  .product-card {
+    width: calc(100% - 40px); /* Full width with margin */
+    margin-bottom: 30px;
+    border: 1px solid white; /* Add border to create cards */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .product-description{
+    padding: 10px;
+    text-align: justify;
+  
+  }
+
+  .filter-container {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-box {
+margin-top: -70px;
+  }
+  .vid-main{
+    width: 90%;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .video1{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+    width: 100%; /* Single card per row */
+    margin-bottom: 20px;
+    padding: 10px;
+    text-overflow: ellipsis;
+  }
+.product-details{
+  padding: 10px;
+ 
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+  
+  
+}
+
+  
+ 
+
+
+  .search-input,
+  .sort-select {
+    text-align: center;
+    font-size: 16px;
+    width: auto;
+  }
+}

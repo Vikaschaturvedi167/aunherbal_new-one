@@ -1,0 +1,86 @@
+/* Login Container */
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+  .login-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  } 
+  
+  /* Base styles */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    padding-right: 55px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .head{
+    font-family: 'Reddit Mono', monospace;
+    margin: 10px;
+  }
+  .input-field {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18PX;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(24, 60, 24);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 9px;
+    margin-bottom: 10px;
+  }
+  .if{
+    font-family: 'Reddit Mono', monospace;
+    margin-bottom: 15px;
+  }
+  
+  .register-link {
+    text-align: center;
+    font-family: 'Reddit Mono', monospace;
+  }
+  
+  .register-link a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .login-container {
+      max-width: 60%;
+      padding: 40px;
+      padding-right: 40px;
+
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 40px;
+      padding-right: 40px;
+    
+    }
+
+  
+    
+  }
+  

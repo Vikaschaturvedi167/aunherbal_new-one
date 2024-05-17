@@ -1,0 +1,156 @@
+// {
+  
+//     "name": "Sundari Bahar",
+//     "picture": "https://drive.google.com/file/d/1S4_m-RKIwcp_RXsQrQoAQeNIJN2zn7n7/view?usp=sharing",
+//     "description": "Sundari Bahar Syrup is a herbal unani tonic that can help manage severel problems occuring in women'bodies.The Syrup is made of natural palants products and herbal extracts and is useful even for general health maintenance.",
+//     "gender": "Female",
+//     "benefits": "It helps relieve in all kinds of aches,and also it deals with kidney issues and problems during urination.It helps maintains hormonal balance, increase immunity level and prepare you to fight against various diseases ",
+//     "dosage": "2-3 teaspoon with warm water after a meal.",
+//     "price": 120,
+//     "created_at": "2024-03-08T12:00:00.000Z",
+//     "updated_at": "2024-03-08T12:00:00.000Z"
+  
+   
+//  }
+
+{
+    "_id": "65eb030e90aef8d94c85cbb9",
+    "name": "Sundari Bahar",
+    "picture": "https://drive.google.com/file/d/1S4_m-RKIwcp_RXsQrQoAQeNIJN2zn7n7/view?usp=drive_link",
+    "description": "Sundari Bahar Syrup is a herbal unani tonic that can help manage severel problems occuring in women'bodies.The Syrup is made of natural palants products and herbal extracts and is useful even for general health maintenance.",
+    "gender": "Female",
+    "benefits": "It helps relieve in all kinds of aches,and also it deals with kidney issues and problems during urination.It helps maintains hormonal balance, increase immunity level and prepare you to fight against various diseases ",
+    "dosage": "2-3 teaspoon with warm water after a meal.",
+    "price": 110,
+    "created_at": "2024-03-08T12:22:38.984Z",
+    "updated_at": "2024-03-08T12:22:38.984Z",
+    "__v": 0
+  }\\
+
+
+  {
+    "_id": "65eb083e90aef8d94c85cbbb",
+    "name": "Hazmoon ",
+    "picture": "https://www.google.com/imgres?imgurl=http%3A%2F%2F5.imimg.com%2Fdata5%2FSELLER%2FDefault%2F2022%2F9%2FXO%2FRY%2FTB%2F136071794%2Fhazmoon-herbal-unani-syrup-250x250.jpg&tbnid=d76_UYdU36qREM&vet=12ahUKEwjyqs678uaEAxWLxDgGHZ2kBKQQMygDegQIARBS..i&imgrefurl=https%3A%2F%2Fwww.indiamart.com%2Fkaifi-enterprises%2Fayurvedic-syrup.html&docid=eIfSpNgw9E2HXM&w=250&h=250&itg=1&q=HAZMOON%20SYRUP&hl=en&ved=2ahUKEwjyqs678uaEAxWLxDgGHZ2kBKQQMygDegQIARBS",
+    "description": "Hazmoon is an Unani formulation for stomach issues and gastrointestinal disorders.It helps increases appetite and digestion.Helps in the effective management of indigestion, stomach discomfort, anorexia, hyperacidity etc.",
+    "gender": "Female",
+    "benefits": "It helps in gastric problems nausea, vomiting, pain abdomen etc. ",
+    "dosage": "2-3 teaspoon with warm water after a meal.",
+    "price": 120,
+    "created_at": "2024-03-08T12:44:46.432Z",
+    "updated_at": "2024-03-08T12:44:46.432Z",
+    "__v": 0
+  }
+
+
+
+
+
+
+
+
+
+  {
+  "productId": "65eb030e90aef8d94c85cbb9",
+  "quantity": 1
+}
+
+
+{
+  "userId": "65eae55c4656f924323edd8a",
+  "productId": "65eb030e90aef8d94c85cbb9",
+  "quantity": 2
+}
+
+
+
+{
+  "name": "Herbo J Zyme 200ml",
+  "picture": "https://example.com/herbo-j-zyme-200ml.jpg",
+  "description": "Herbo J Zyme 200ml is a trusted Unani tonic designed to provide relief from digestive problems such as acidity, constipation, and gas. Our unique formula is specifically crafted to boost digestive immunity, offering long-term relief from all types of digestive issues. With Herbo J Zyme, you can finally say goodbye to discomfort and embrace a healthier, more balanced digestive system. Trust in the power of nature and experience the transformative effects of our herbal tonic today.",
+  "gender": "Both",
+  "benefits": "Helps in the treatment of indigestion, hyperacidity, and burning chest.",
+  "dosage": "Take 5-10 grams with warm water after a meal.",
+  "price": 145
+}
+
+
+{
+  "name": "Sundari Care 200ml",
+  "picture": "https://example.com/herbo-j-zyme-200ml.jpg",
+  "description": "This syrup that promotes healthy and glowing skin from within.Our 100% pure formula is specifically designed to clear your stomach and cleanse your blood.Effectively targeting and eliminating acne and pimples caused by blood impurities.With Sundari Care, you can nourish your skin from the inside out, achieving a clear and radiant complexion that you've always desired.",
+  "gender": "female",
+  "benefits": "nourishes your skin from the inside out, achieving a clear and radiant complexion that you've always desired.",
+  "dosage": "as advised by the Physician",
+  "price": 145
+}
+
+
+
+
+
+
+
+
+const handleOpenRazorpay = (data) => {
+
+//     const options = {
+//         key: 'rzp_test_v9D2YBoLpGMqBA',
+//         amount: Number(data.amount),
+//         currency: data.currency,
+//         order_id: data.id,
+//         name: 'SHOPPING APP',//
+//         description: 'XYZ',//
+//         handler: function (response) {
+//             console.log(response, "34")
+//             axios.post('http://localhost:5000/payment/verification', { response: response })
+//                 .then(res => {
+//                     console.log(res, "37")
+//                     // your orders
+//                 })
+//                 .catch(err => {
+//                     console.log(err)
+//                 })
+//         }
+
+//     }
+//     const rzp = new window.Razorpay(options)
+//     rzp.open()
+
+// }
+
+// const handlePayment = (productIds, amount) => {
+//   const requestData = { productIds, amount };
+//   axios.post('http://localhost:5000/payment/checkout', requestData)
+//       .then(res => {
+//           const responseData = res.data;
+//           console.log(responseData);
+//           if (responseData && responseData.data) {
+//               handleOpenRazorpay(responseData.data);
+//           } else {
+//               console.error('Invalid response data from server');
+//               // Handle invalid response from server, possibly show error message to the user
+//           }
+//       })
+//       .catch(err => {
+//           console.error('Error initiating payment:', err);
+//           // Handle error, possibly show error message to the user
+//       });
+// };
+
+
+
+
+
+
+
+my name is vikas chaturvedi  i am from gorakhur and i have done full stack developkemt couse from masai which was an extansive program my skills are html css java script , reACT REct js 
+
+Z
+
+
+
+
+
+
+https://aun-herbal-backend.onrender.com/api/products
